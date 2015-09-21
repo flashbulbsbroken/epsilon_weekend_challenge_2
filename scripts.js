@@ -8,7 +8,14 @@ $(document).ready(function() {
 		articleSearch = $('.anything').val();
 		console.log("Search on " + articleSearch);
 		search(articleSearch);
-	});z
+	});
+
+$('.resetButton').on('click', function() {
+		event.preventDefault(); 
+		$('.articles').remove();
+		document.getElementById("searchValue").value = "";
+	});
+
 });
 
 function search(query){
@@ -27,11 +34,15 @@ function search(query){
 		console.log(articleList);
 
 		for(var i = 0; i < articleList.length; i++) {
-		event.preventDefault(); 
+		// event.preventDefault(); 
 		$(".content-placeholder").append("<p class='articles'><a href='" + data.response.docs[i].web_url + "'>" + data.response.docs[i].snippet + "</a></p>");
-
+		$("this").remove()
 		}
 });
+
+// function clearSearch() {
+// 	document.getElementById("searchValue").value = "";
+// }
 	
 };
 

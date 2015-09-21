@@ -32,18 +32,32 @@ h1 {
 	display: block;
 }
 
-.submitButton {
-	font-family: Helvetica, Arial, sans-serif;
+.submitButton, .resetButton {
 	font-size: 14pt;
+	text-align: center;
 
 	color: #FF5050;
 	background: rgba(0,0,0,0);
 	border: solid 2px #FF5050;
 	font-family: 'Annie Use Your Telescope', Helvetica, Arial, sans-serif;
 
-	margin: 0 auto;
+	height: 40px;
 	width: 80px;
-	display: block;
+	display: inline-block;
+
+}
+
+.submitButton:hover, .resetButton:hover {
+	background-color: #FFEEEE;
+	text-shadow: -1px 1px #FFEEEE;
+}
+
+.submitButton:focus, .resetButton:focus {
+	outline: 0;
+}
+
+.center {
+	text-align: center;
 }
 
 .content-placeholder {
