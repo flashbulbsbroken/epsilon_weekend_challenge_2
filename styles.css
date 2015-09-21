@@ -1,0 +1,62 @@
+body {
+	background: #FFB9B9;
+}
+
+main {
+	margin: 0 auto;
+	padding: 1px 5px 15px 5px;
+	width: 500px;
+	display: block;
+	background: #fff;
+}
+
+h1 {
+	font-family: 'Annie Use Your Telescope', Helvetica, Arial, sans-serif;
+	font-size: 30pt;
+	color: #FF5050;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: -3px;
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	text-align: center;
+}
+
+.searchQuery {
+	margin: 0 auto;
+	width: 200px;
+	display: block;
+}
+
+.submitButton {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14pt;
+
+	color: #FF5050;
+	background: rgba(0,0,0,0);
+	border: solid 2px #FF5050;
+	font-family: 'Annie Use Your Telescope', Helvetica, Arial, sans-serif;
+
+	margin: 0 auto;
+	width: 80px;
+	display: block;
+}
+
+.content-placeholder {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+
+}
+
+li {
+	line-height: 20px;
+}
+
+a {
+	color: #6666FF;
+}
+
