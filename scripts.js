@@ -5,10 +5,10 @@ $(document).ready(function() {
 // function searchText() { 
 	$('.submitButton').on('click', function() {
 		event.preventDefault(); 
-		articleSearch = $('.searchQuery').val();
+		articleSearch = $('.anything').val();
 		console.log("Search on " + articleSearch);
 		search(articleSearch);
-	});
+	});z
 });
 
 function search(query){
@@ -28,7 +28,7 @@ function search(query){
 
 		for(var i = 0; i < articleList.length; i++) {
 		event.preventDefault(); 
-		$(".content-placeholder").append("<li><a href='" + data.response.docs[i].web_url + "'>" + data.response.docs[i].snippet + "</a></li>");
+		$(".content-placeholder").append("<p class='articles'><a href='" + data.response.docs[i].web_url + "'>" + data.response.docs[i].snippet + "</a></p>");
 
 		}
 });
